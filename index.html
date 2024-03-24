@@ -2,6 +2,8 @@
     <meta charset="UTF-8">
     <meta name="Robert" content="width=device-width">
     <title>劉仲群</title>
+    <link rel="icon" type="image" href="D2F5036F-E13E-418D-B8BB-D5E56BEA6442.jpg
+        ">
     <style>
     body {
         font-family: Source Han Serif K, DengXian;
@@ -47,9 +49,17 @@
     }
 
     .about-me,
-    .skills,
+    .skills {
+        margin-bottom: 3px;
+        text-align: center;
+        color: lightslategray;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
     .social-links {
-        margin-bottom: 50px;
+        align-items: center;
+        text-align: center
     }
 
     h2 {
@@ -65,6 +75,24 @@
 
     li {
         margin-bottom: 5px;
+        text-align: center;
+        color: lightslategray;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+
+    }
+
+    li:hover {
+        background-color: #e6e6e6;
+    }
+
+    nav {
+        color: darkgray;
+    }
+
+    h2 {
+        text-align: center
     }
 
     .social-links a {
@@ -72,23 +100,26 @@
         text-decoration: none;
         margin: 0 10px;
         font-size: 30px;
+        align-items: center
     }
 
     .social-links a img {
         animation: slide-top 1s ease;
+        align-items: center
     }
 
     .footer {
         background-color: gray;
         color: ghostwhite;
         text-align: center;
-        padding: 20px;
-        position: static;
-        bottom: 5px;
-        width: 93%;
+        padding: 3px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 200px;
+        margin: 0 auto;
         border-radius: 50px;
-        margin-top: -20px;
-    }
     </style>
 </head>
 
@@ -96,10 +127,32 @@
     <header>
         <h1><span style="color:black; font-size: 100px;animation: slide-top 1s ease;">劉仲群</span></h1>
         <p><span style="color:darkgray; font-size: 30px;">國立臺灣師範大學 地理學系</span></p>
+        <nav>
+            <ul style="display: flex; justify-content: center; list-style: none; padding: 12;color:darkgray;">
+                <li style="margin-right: 10px;color:gray;"><a href="index.html">首頁</a></li>
+                <li style="margin-right: 10px;color:gray;"><a href="#aboutme">個人簡介</a></li>
+                <li style="margin-right: 10px;color:gray"><a href="#skills">技能</a></li>
+                <li style="margin-right: 10px;color:gray"><a href="myexperience.html">經歷</a></li>
+                <li style="margin-right: 10px;color:gray"><a href="#social-links">社交連結</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="container">
         <img src="個人照.PNG" alt="我的照片" class="profile-image">
-        <div class="about-me">
+        <div id="aboutme" class="aboutme">
+            <center>
+                <table border="0.2">
+                    <tr>
+                        <td>生日</td>
+                        <td>2003/08/11</td>
+                    </tr>
+                    <tr>
+                        <td>居住城市</td>
+                        <td>台中市</td>
+                    </tr>
+            </center>
+            </table>
+            </center>
             <h2>個人簡介</h2>
             <p><span style="color:black; font-size: 20px;line-height: 1">【關於我】</p>
             <p>
@@ -114,16 +167,18 @@
                 我在2023年暑假的臺師大地理營擔任總籌，帶領著系上的學生們完成一個囊括專業課程、考察以及活動的五天四夜營隊，規模約為90人，實踐了自己的組織、溝通以及整合的能力，也在2023帶領所屬的系學會獲得「最佳社團年度行銷」的佳績
             </p>
         </div>
-        <div class="skills">
+        <div id="skills" class="skills">
             <h2>技能</h2>
-            <ul>
-                <li>HTML</li>
-                <li>ArcGIS Pro</li>
-                <li>Python</li>
-                <li>Adobe Premiere</li>
-            </ul>
+            <div class="skills">HTML</div>
+            <div class="skills">ArcGIS Pro</div>
+            <div class="skills">Python</div>
+            <div class="skills">Adobe Premiere</div>
+            <div class="skills">2021年作品</div>
+            <div class="viedo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tQCT4t6dmLU?si=skunPYam6QZBSzPe&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="social-links">
+        <div id="social-links" class="social-links">
             <h2>社交連結</h2>
             <a href="https://www.instagram.com/lcc_0811?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                 <img src="R.png" style="width: 60px; height: 60px;" alt="Instagram">
